@@ -1,0 +1,23 @@
+/*
+** game.c for  in /home/shadow/Tetris-Epitech-master/src/events
+** 
+** Made by nicolas djurovic
+** Login   <shadow@epitech.net>
+** 
+** Started on  Sat Mar 18 12:50:48 2017 nicolas djurovic
+** Last update Sun Mar 19 13:59:43 2017 nicolas djurovic
+*/
+
+#include "tetris.h"
+
+int	key_quit_event(t_game *game)
+{
+  (void) game;
+  return (2);
+}
+
+int	key_pause_event(t_game *game)
+{
+  game->running = ((game->running) ? false : true);
+  return (0);
+}
